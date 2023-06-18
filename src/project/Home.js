@@ -31,7 +31,7 @@ export function Myhome2()
     return( 
         <Fragment>
              <h1>this is html element</h1>
-             <h2 className="first">heading two</h2>
+             <h2 className="first">heading two </h2>
         </Fragment>
         )
 }
