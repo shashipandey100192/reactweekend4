@@ -11,3 +11,27 @@
     color:red;
     background-color:orange;
 }
+.mynav
+{
+    width:100%;
+    height:50px;
+    background-color:gray;
+    color:white;
+    font-size: 40px;
+}
+.mysecond
+{
+    width:100%;
+    height:300px;
+    background-color:rgb(217, 216, 216);
+    color:white;
+    font-size: 40px;
+    margin-top:20px;
+    box-shadow: 2px 2px 5px black;
+}
+
+*
+{
+    margin:0 auto;
+    padding:0;
+}
