@@ -1,6 +1,7 @@
 import React from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle";
+import { FcAlarmClock,FcCancel,FcDislike } from "react-icons/fc";
 
 
 
@@ -9,7 +10,7 @@ function Mybootstrap() {
     <div className='container'>
         <div className='row'>
             <div className='col-12'>
-            <h1>Mybootstrap page</h1>
+            <h1>Mybootstrap page <FcAlarmClock></FcAlarmClock> <FcCancel/> <FcDislike/></h1>
             </div>
         </div>
         <div className='row'>
