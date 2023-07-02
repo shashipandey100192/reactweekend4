@@ -10,6 +10,7 @@ import Contactus from './modules/Contactus';
 import Myform from './modules/Myform';
 import Myfooter from './modules/Myfooter';
 import Formtype1 from './modules/Formtype1';
+import Customform from './modules/Customform';
 
 
 
@@ -25,6 +26,7 @@ root.render(
         <Route path='contactus' element={<Contactus/>}/>
         <Route path='forms' element={<Myform/>}>
           <Route path='form1' element={<Formtype1/>}/>
+          <Route path='custom' element={<Customform/>}/>
         </Route>
       </Routes>
       <Myfooter/>
