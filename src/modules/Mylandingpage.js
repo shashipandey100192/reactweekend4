@@ -2,9 +2,12 @@ import React from 'react';
 const imgs= "https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg?w=2000";
 
 function Mylandingpage() {
-const datafromlocal = JSON.parse(localStorage.getItem("mydatalist"));
+let datafromlocal = JSON.parse(localStorage.getItem("mydatalist"));
 console.log(datafromlocal)
-
+if(datafromlocal==null)
+{
+    datafromlocal=[];
+}
   return (
     <div className='container-fluid p-3 mt-5'>
         <div className='row'>

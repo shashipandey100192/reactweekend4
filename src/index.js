@@ -11,6 +11,8 @@ import Myform from './modules/Myform';
 import Myfooter from './modules/Myfooter';
 import Formtype1 from './modules/Formtype1';
 import Customform from './modules/Customform';
+import Mychart from './modules/Mychart';
+import Myapi from './modules/myaxios';
 
 
 
@@ -28,6 +30,8 @@ root.render(
           <Route path='form1' element={<Formtype1/>}/>
           <Route path='custom' element={<Customform/>}/>
         </Route>
+        <Route path='chart' element={<Mychart/>}/>
+        <Route path='axios' element={<Myapi/>}/>
       </Routes>
       <Myfooter/>
     </BrowserRouter>
