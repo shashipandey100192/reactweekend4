@@ -13,6 +13,8 @@ import Formtype1 from './modules/Formtype1';
 import Customform from './modules/Customform';
 import Mychart from './modules/Mychart';
 import Myapi from './modules/myaxios';
+import Detailspage from './modules/Detailspage';
+import Myfetchapi from './modules/Myfetchapi';
 
 
 
@@ -32,6 +34,8 @@ root.render(
         </Route>
         <Route path='chart' element={<Mychart/>}/>
         <Route path='axios' element={<Myapi/>}/>
+        <Route path='axios/:id' element={<Detailspage/>}/>
+        <Route path='fetchapi' element={<Myfetchapi/>}/>
       </Routes>
       <Myfooter/>
     </BrowserRouter>
