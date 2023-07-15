@@ -1,4 +1,5 @@
 import React from 'react';
+import { useAuth0 } from '@auth0/auth0-react';
 const imgs= "https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg?w=2000";
 
 function Mylandingpage() {
@@ -8,6 +9,12 @@ if(datafromlocal==null)
 {
     datafromlocal=[];
 }
+ const {loginWithRedirect}=useAuth0();
+const mylogin = ()=>
+{
+    loginWithRedirect();
+}
+
   return (
     <div className='container-fluid p-3 mt-5'>
         <div className='row'>
@@ -55,6 +62,9 @@ if(datafromlocal==null)
             
         </div>
         <div className='row'>
+            <div className='col-12'>
+                <button type='button' onClick={mylogin}>login page</button>
+            </div>
             <div className='col-12'>
                 
                         <div>

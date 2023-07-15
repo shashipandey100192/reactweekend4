@@ -15,14 +15,21 @@ import Mychart from './modules/Mychart';
 import Myapi from './modules/myaxios';
 import Detailspage from './modules/Detailspage';
 import Myfetchapi from './modules/Myfetchapi';
-
+import Noida63mainbranch from './modules/datas/Noida63mainbranch';
+import { Auth0Provider } from '@auth0/auth0-react';
 
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <Auth0Provider 
+    domain="dev-2lztdozl12hbrfpe.us.auth0.com"
+    clientId="HmK0W7dfNBZxyNJjHBmeUmfTe7oxaEKR"
+    authorizationParams={{
+      redirect_uri: window.location.origin
+    }}>
+    <BrowserRouter >
     <Mynav/>
       <Routes>
         <Route path='' element={<Mylandingpage/>}/> 
@@ -36,10 +43,11 @@ root.render(
         <Route path='axios' element={<Myapi/>}/>
         <Route path='axios/:id' element={<Detailspage/>}/>
         <Route path='fetchapi' element={<Myfetchapi/>}/>
+        <Route path='myprops' element ={<Noida63mainbranch/>}/>
       </Routes>
       <Myfooter/>
     </BrowserRouter>
- 
+    </Auth0Provider>
     
 
   </React.StrictMode>
