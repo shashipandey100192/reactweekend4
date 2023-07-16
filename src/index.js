@@ -17,6 +17,8 @@ import Detailspage from './modules/Detailspage';
 import Myfetchapi from './modules/Myfetchapi';
 import Noida63mainbranch from './modules/datas/Noida63mainbranch';
 import { Auth0Provider } from '@auth0/auth0-react';
+import { Provider } from 'react-redux';
+import { store } from './modules/myredux/Store';
 
 
 
@@ -29,6 +31,7 @@ root.render(
     authorizationParams={{
       redirect_uri: window.location.origin
     }}>
+      <Provider store={store}>
     <BrowserRouter >
     <Mynav/>
       <Routes>
@@ -47,6 +50,7 @@ root.render(
       </Routes>
       <Myfooter/>
     </BrowserRouter>
+    </Provider>
     </Auth0Provider>
     
 
